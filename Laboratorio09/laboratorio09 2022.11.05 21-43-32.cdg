@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="laboratorio09">
+  <ClassDiagramComponents>
+    <Class name="Soldado" package="laboratorio09" visibility="public" xPosition="64.0" yPosition="-393.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="nivelAtaque" type="int" visibility="private"/>
+        <Field name="nivelDefensa" type="int" visibility="private"/>
+        <Field name="nivelVida" type="int" visibility="private"/>
+        <Field name="vidaActual" type="int" visibility="private"/>
+        <Field name="velocidad" type="int" visibility="private"/>
+        <Field name="actitud" type="String" visibility="private"/>
+        <Field name="vive" type="boolean" visibility="private"/>
+        <Field name="fila" type="int" visibility="private"/>
+        <Field name="columna" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="setNivelAtaque" returnType="void" visibility="public">
+          <Argument type="int" name="nivelAtaque"/>
+        </Method>
+        <Method name="setNivelDefensa" returnType="void" visibility="public">
+          <Argument type="int" name="nivelDefensa"/>
+        </Method>
+        <Method name="setNivelVida" returnType="void" visibility="public">
+          <Argument type="int" name="nivelVida"/>
+        </Method>
+        <Method name="setVidaActual" returnType="void" visibility="public">
+          <Argument type="int" name="vidaActual"/>
+        </Method>
+        <Method name="setVelocidad" returnType="void" visibility="public">
+          <Argument type="int" name="velocidad"/>
+        </Method>
+        <Method name="setActitud" returnType="void" visibility="public">
+          <Argument type="String" name="actitud"/>
+        </Method>
+        <Method name="setVive" returnType="void" visibility="public">
+          <Argument type="boolean" name="vive"/>
+        </Method>
+        <Method name="setFila" returnType="void" visibility="public">
+          <Argument type="int" name="fila"/>
+        </Method>
+        <Method name="setColumna" returnType="void" visibility="public">
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getNivelAtaque" returnType="int" visibility="public"/>
+        <Method name="getNivelDefensa" returnType="int" visibility="public"/>
+        <Method name="getNivelVida" returnType="int" visibility="public"/>
+        <Method name="getVidaActual" returnType="int" visibility="public"/>
+        <Method name="getVelocidad" returnType="int" visibility="public"/>
+        <Method name="getActitud" returnType="String" visibility="public"/>
+        <Method name="isVive" returnType="boolean" visibility="public"/>
+        <Method name="getFila" returnType="int" visibility="public"/>
+        <Method name="getColumna" returnType="int" visibility="public"/>
+        <Method name="atacar" returnType="void" visibility="public"/>
+        <Method name="defender" returnType="void" visibility="public"/>
+        <Method name="avanzar" returnType="void" visibility="public"/>
+        <Method name="retroceder" returnType="void" visibility="public"/>
+        <Method name="ser_atacado" returnType="void" visibility="public"/>
+        <Method name="huir" returnType="void" visibility="public"/>
+        <Method name="morir" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VideoJuego6" package="laboratorio09" visibility="public" xPosition="657.0" yPosition="31.0">
+      <Fields>
+        <Field name="sc" type="Scanner" visibility="package" isStatic="true"/>
+        <Field name="r" type="Random" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="generar_HasMap" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+          <Argument type="int" name="cantidad"/>
+          <Argument type="String" name="equipo"/>
+        </Method>
+        <Method name="llenar_tabla" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+          <Argument type="Soldado[][]" name="c"/>
+        </Method>
+        <Method name="mostrar_tabla" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Soldado[][]" name="a"/>
+        </Method>
+        <Method name="ultima_letra" returnType="String" visibility="public" isStatic="true">
+          <Argument type="Soldado" name="a"/>
+        </Method>
+        <Method name="mayor_hasmap" returnType="Soldado" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+        </Method>
+        <Method name="prom_fila" returnType="double" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+        </Method>
+        <Method name="mostrar_Hasmap" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+        </Method>
+        <Method name="ordenarPorPuntosInsercion" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+        </Method>
+        <Method name="ordenarPorPuntosBurbuja" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+        </Method>
+        <Method name="intercambiar" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+          <Argument type="int" name="i"/>
+          <Argument type="int" name="j"/>
+        </Method>
+        <Method name="quien_gana" returnType="void" visibility="public" isStatic="true">
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="a"/>
+          <Argument type="HashMap&lt;Integer, Soldado&gt;" name="b"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="laboratorio09.VideoJuego6" target="laboratorio09.Soldado" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
