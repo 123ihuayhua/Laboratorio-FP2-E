@@ -276,6 +276,6 @@ public class VideoJuegoSoldados {
 	for (int i = 0; i < b.size(); i++) {
             a.llenartablero(b.get(i));
 	}
-    }
+    } 
     
 }
